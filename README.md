@@ -1,2 +1,2 @@
-# project
-is445 final project
+# crud-project
+IS445 Course Project
