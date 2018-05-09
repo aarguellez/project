@@ -1,32 +1,18 @@
 {
-  "name": "crud-project",
-  "version": "1.0.0",
-  "description": "IS445 Course Project",
-  "main": "index.js",
+  "name": "crud-demo",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "start": "node ./bin/www",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/michaelbreamer/crud-project.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/michaelbreamer/crud-project/issues"
-  },
-  "homepage": "https://github.com/michaelbreamer/crud-project#readme",
   "dependencies": {
-    "ajax": "0.0.4",
-    "cookie-parser": "^1.4.3",
+    "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "dotenv": "^5.0.1",
-    "ejs": "^2.5.9",
+    "ejs": "~2.5.7",
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
-    "mongoose": "^5.0.16",
-    "morgan": "^1.9.0"
+    "mongoose": "^5.0.17",
+    "morgan": "~1.9.0"
   }
 }
