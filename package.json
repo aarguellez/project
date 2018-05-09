@@ -1,34 +1,29 @@
 {
   "name": "project",
   "version": "1.0.0",
-  "description": "IS445 Course Project",
-  "main": "server.js",
-  "dependencies": {
-    "body-parser": "^1.18.2",
-    "ejs": "^2.5.9",
-    "express": "^4.16.3",
-    "mongoose": "^5.0.16",
-    "morgan": "^1.9.0"
-  },
-  "devDependencies": {
-    "nodemon": "^1.17.3"
-  },
+  "description": "is445 final project",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/michaelbreamer/project.git"
+    "url": "git+https://github.com/david-bui777/project.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/michaelbreamer/project/issues"
+    "url": "https://github.com/david-bui777/project/issues"
   },
-  "homepage": "https://github.com/michaelbreamer/project#readme",
-  "engines": {
-    "node": "9.4.0"
+  "homepage": "https://github.com/david-bui777/project#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.9",
+    "express": "^4.16.3"
+  },
+  "engine": {
+    "node": "8.11.1"
   }
 }
