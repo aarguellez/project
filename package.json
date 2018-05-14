@@ -1,7 +1,7 @@
 {
   "name": "project",
   "version": "1.0.0",
-  "description": "IS445 Course Project",
+  "description": "IS445 Project",
   "main": "index.js",
   "scripts": {
     "start": "node ./bin/www",
