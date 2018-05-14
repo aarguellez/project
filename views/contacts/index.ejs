@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Contact List</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="javascripts/delete-contact.js"></script>
+</head>
+
+<body>
+  <%- include('header') %>
+
+    <div class="container" style="margin-top: 15px;">
+      <h1 style="font-size: 1.5em">Contact List</h1>
+      <% if(contacts.length>0) { %>
+        <table>
+          <thead>
+            <tr>
+              <th class="table-heading" style="padding: 10px; text-align: center">Contact Name</th>
+              <th class="table-heading" style="padding: 10px; text-align: center">Email</th>
+              <th class="table-heading" style="padding: 10px; text-align: center">Phone</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% for(var i=0; i<contacts.length;i++) { %>
+              <tr>
+                <td style="padding: 10px; text-align: center">
+                  <a href="/contacts/show/<%= contacts[i]._id%>">
+                    <%= contacts[i].name%>
+                  </a>
+                </td>
+                <td style="padding: 10px; text-align: center">
+                  <%= contacts[i].email%>
+                </td>
+                <td style="padding: 10px; text-align: center">
+                  <%= contacts[i].phone%>
+                </td>
+                <td style="padding: 10px; text-align: center">
+                    <input type="button" class="btn btn-outline-success btn-sm" value="Details" onclick="location.href = '/contacts/show/<%= contacts[i]._id%>';">
+                </td>
+                <td style="padding: 10px; text-align: center">
+                    <input type="button" class="btn btn-outline-success btn-sm" value="Edit" onclick="location.href = '/contacts/edit/<%= contacts[i]._id%>';">
+                </td>
+                <td style="padding: 10px; text-align: center">
+                    <button class="deleteButton" data-uid="<%= contacts[i]._id%>">
+                        Delete
+                      </button>
+                </td>
+              </tr>
+              <% } %>
+          </tbody>
+        </table>
+        <% } else { %>
+          <div>No contact found.</div>
+          <% } %>
+    </div>
+</body>
+
+</html>
