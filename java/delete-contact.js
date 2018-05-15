@@ -2,7 +2,7 @@ $(() => $(".deleteButton").click(clickHandler));
 
 function clickHandler() {
 
-  if (confirm("Are you sure you would like to delete this contact?")) {
+  if (confirm("Do you want to delete this?")) {
     const uid = $(this).attr("data-uid");
     console.log("delete: ", uid);
     deleteContact(uid);
@@ -26,7 +26,7 @@ function deleteContact(uid) {
   });
 
   const requesthome = $.ajax({
-    url: '../contacts/',
+    url: '../Contact List/',
     type: 'get'
   });
   setTimeout('window.location.replace("../contacts");', 3000)
