@@ -1,7 +1,7 @@
 {
-  "name": "crud-project",
+  "name": "project",
   "version": "1.0.0",
-  "description": "IS445 Course Project",
+  "description": "IS445 Project",
   "main": "index.js",
   "scripts": {
     "start": "node ./bin/www",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/michaelbreamer/crud-project.git"
+    "url": "git+https://github.com/aarguellez/project.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/michaelbreamer/crud-project/issues"
+    "url": "https://github.com/aarguellez/project/issues"
   },
-  "homepage": "https://github.com/michaelbreamer/crud-project#readme",
+  "homepage": "https://github.com/aarguellez/project#readme",
   "dependencies": {
     "ajax": "0.0.4",
     "cookie-parser": "^1.4.3",
