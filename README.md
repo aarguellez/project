@@ -1,2 +1,2 @@
-# crud-project
-IS445 Course Project
+# project
+IS 445 project! Good Luck on Finals!
